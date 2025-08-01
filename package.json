@@ -36,12 +36,12 @@
       "serve",
       "type-check"
     ],
-    "warning": "🚨 CRITICAL: DO NOT REMOVE OR MODIFY ABOVE DEPENDENCIES - Required for Next.js 15 TypeScript app functionality"
+    "warning": "\ud83d\udea8 CRITICAL: DO NOT REMOVE OR MODIFY ABOVE DEPENDENCIES - Required for Next.js 15 TypeScript app functionality"
   },
   "scripts": {
-    "dev": "next dev -H 0.0.0.0 -p 4028",
-    "build": "next build",
-    "start": "next dev -p 4028",
+    "dev": "node api.js && next dev -H 0.0.0.0 -p 4028",
+    "build": "node api.js && next build",
+    "start": "node api.js && next dev -p 4028",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,md,json}\"",
     "serve": "next start",
     "type-check": "tsc --noEmit"
